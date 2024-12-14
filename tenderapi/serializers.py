@@ -36,7 +36,8 @@ class RegistrationSerializer(serializers.ModelSerializer):
         UserProfile.objects.create(user=user, company_name=company_name, role=role)
 
         return user
-
+# role: The instance of the Role model that was retrieved or created.
+# _: A boolean value indicating whether the instance was newly created (True) or retrieved from the database (False)
 class BiddingSerializer(serializers.ModelSerializer):
 
     class Meta:

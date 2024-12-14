@@ -144,6 +144,7 @@ class DeleteBiddingView(APIView):
         return Response({'msg': 'deleted successfully'}, status=status.HTTP_204_NO_CONTENT)
 
 
+
 class LogoutView(APIView):
     permission_classes = [IsAuthenticated]
 
